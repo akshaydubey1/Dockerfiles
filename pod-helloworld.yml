@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+	name: nodehelloworld.example.com
+	labels:
+		app: helloworld
+spec:
+	containers:
+	-name: docker-demo
+	 image: akshaydubey1/docker-demo
+	 ports:
+	 -containerPort: 30939
